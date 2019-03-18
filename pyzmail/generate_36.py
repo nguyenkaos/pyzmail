@@ -349,7 +349,7 @@ def complete_mail(message, sender, recipients, subject, default_charset, cc=[], 
 
     return payload, mail_from, rcpt_to, msg_id
 
-def compose_mail(sender, recipients, subject, default_charset, text, html=None, attachments=[], embeddeds=[], cc=[], bcc=[], message_id_string=None, date=None, headers=[]):
+def compose_mail(sender, recipients, subject, default_charset, text, html=None, attachments=[], embeddeds=[], cc=[], bcc=[], message_id_string=None, date=None, headers=[], replyto='', name_replyto=''):
     """
     Compose an email regarding the arguments. Call L{build_mail()} and
     L{complete_mail()} at once.
